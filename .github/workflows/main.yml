@@ -33,7 +33,7 @@ jobs:
         uses: svenstaro/upload-release-action@v2
         with:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
-          file: armnn.zip
+          file: armnn.module/armnn.zip
           asset_name: magisk_module_armnn_${{ env.ARMNN_MAJ_VER }}-${{ env.ARMNN_MIN_VER }}.zip
           tag: ${{ github.ref }}
           overwrite: true
