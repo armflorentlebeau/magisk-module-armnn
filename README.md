@@ -8,7 +8,7 @@ This repository creates a Magisk module to update the Arm NN driver for the Andr
 
 ## Installation
 
-On the device, download the module from [here](https://github.com/armflorentlebeau/magisk-module-armnn/releases/tag/main).
+On the device, download the module from [here](https://github.com/armflorentlebeau/magisk-module-armnn/releases).
 
 Then, in a root shell, run:
 
