@@ -1,6 +1,6 @@
 # ArmNN Magisk Module
 
-This repository creates a Magisk module with the latest version of ArmNN.
+This repository creates a Magisk module to update the Arm NN driver for the Android Neural Networks API.
 
 ## Tested device(s)
 
