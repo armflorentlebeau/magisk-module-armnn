@@ -1,4 +1,4 @@
-id=armnn.module
+id=armnn-3200.module
 name=ArmNN Module
 version=v32.0.0
 versionCode=32
