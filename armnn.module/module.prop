@@ -1,6 +1,6 @@
 id=armnn-3200.module
 name=ArmNN Module
-version=v32.0.0
+version=v32.1.0
 versionCode=32
 author=armflorentlebeau
 description=This module installs the latest ArmNN library for machine learning
