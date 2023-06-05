@@ -8,12 +8,13 @@ This repository creates a Magisk module to update the Arm NN driver for the Andr
 
 ## Installation
 
-On the device, download the module from [here](https://github.com/armflorentlebeau/magisk-module-armnn/releases).
+On the device, download the latest module from [here](https://github.com/armflorentlebeau/magisk-module-armnn/releases/latest).
 
-Then, in a root shell, run:
+In a shell, enter `su` to run as root and CD into the directory where the module has been downloaded.
 
+Install the module with:
 ```
-magisk --install-module /sdcard/Download/magisk_module_armnn_23-02.zip
+magisk --install-module magisk_module_armnn_23-05.zip
 ```
 
 ## Enable disable module
@@ -25,5 +26,5 @@ To check the version of ArmNN which is currently installed, run in a root shell:
 ```
 /system/vendor/bin/hw/android.hardware.neuralnetworks@1.3-service-armnn -V
 ArmNN Android NN driver for the Android Neural Networks API.
-ArmNN v32.0.0
+ArmNN v32.1.0
 ```
