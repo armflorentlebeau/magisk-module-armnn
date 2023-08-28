@@ -13,7 +13,7 @@ jobs:
     # Set latest version
     env:
       ARMNN_MAJ_VER: "23"
-      ARMNN_MIN_VER: "05"
+      ARMNN_MIN_VER: "08"
 
     steps:
       - name: Checkout repository
