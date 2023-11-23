@@ -27,7 +27,7 @@ jobs:
           tar xf AndroidNN-android-${{ env.ANDROID_SDK_VER }}-arm64-v8.2-a.tar.gz
           mkdir -p armnn.module/system/vendor/bin/hw/
           mkdir -p armnn.module/META_INF/com/google/android/
-          cp AndroidNN-android-${{ env.ANDROID_SDK_VER }}-arm64-v8.2-a/android.hardware.neuralnetworks@1.3-service-armnn armnn.module/system/vendor/bin/hw/
+          cp AndroidNN-android-32-arm64-v8.2-a/android.hardware.neuralnetworks@1.3-service-armnn armnn.module/system/vendor/bin/hw/
           cp module_installer.sh armnn.module/META_INF/com/google/android/update-binary
           echo "#MAGISK" >> armnn.module/META_INF/com/google/android/update-script
           cd armnn.module
