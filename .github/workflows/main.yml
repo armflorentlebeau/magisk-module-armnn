@@ -14,6 +14,7 @@ jobs:
     env:
       ARMNN_MAJ_VER: "23"
       ARMNN_MIN_VER: "11"
+      ANDROID_SDK_VER: "33"
 
     steps:
       - name: Checkout repository
@@ -21,12 +22,12 @@ jobs:
 
       - name: Download ArmNN and package it
         run: |
-          wget https://github.com/ARM-software/android-nn-driver/releases/download/v${{ env.ARMNN_MAJ_VER }}.${{ env.ARMNN_MIN_VER }}/AndroidNN-android-33-arm64-v8.2-a.tar.gz
+          wget https://github.com/ARM-software/android-nn-driver/releases/download/v${{ env.ARMNN_MAJ_VER }}.${{ env.ARMNN_MIN_VER }}/AndroidNN-android-${{ env.ANDROID_SDK_VER }}-arm64-v8.2-a.tar.gz
           wget https://raw.githubusercontent.com/topjohnwu/Magisk/master/scripts/module_installer.sh
-          tar xf AndroidNN-android-32-arm64-v8.2-a.tar.gz
+          tar xf AndroidNN-android-${{ env.ANDROID_SDK_VER }}-arm64-v8.2-a.tar.gz
           mkdir -p armnn.module/system/vendor/bin/hw/
           mkdir -p armnn.module/META_INF/com/google/android/
-          cp AndroidNN-android-32-arm64-v8.2-a/android.hardware.neuralnetworks@1.3-service-armnn armnn.module/system/vendor/bin/hw/
+          cp AndroidNN-android-${{ env.ANDROID_SDK_VER }}-arm64-v8.2-a/android.hardware.neuralnetworks@1.3-service-armnn armnn.module/system/vendor/bin/hw/
           cp module_installer.sh armnn.module/META_INF/com/google/android/update-binary
           echo "#MAGISK" >> armnn.module/META_INF/com/google/android/update-script
           cd armnn.module
