@@ -4,7 +4,7 @@ This repository creates a Magisk module to update the Arm NN driver for the Andr
 
 ## Tested device(s)
 
-- Google Pixel 7 Pro
+- Google Pixel 7 Pro Android 13 (API level 33)
 
 ## Installation
 
