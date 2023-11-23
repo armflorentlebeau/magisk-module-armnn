@@ -21,7 +21,7 @@ jobs:
 
       - name: Download ArmNN and package it
         run: |
-          wget https://github.com/ARM-software/android-nn-driver/releases/download/v${{ env.ARMNN_MAJ_VER }}.${{ env.ARMNN_MIN_VER }}/AndroidNN-android-32-arm64-v8.2-a.tar.gz
+          wget https://github.com/ARM-software/android-nn-driver/releases/download/v${{ env.ARMNN_MAJ_VER }}.${{ env.ARMNN_MIN_VER }}/AndroidNN-android-33-arm64-v8.2-a.tar.gz
           wget https://raw.githubusercontent.com/topjohnwu/Magisk/master/scripts/module_installer.sh
           tar xf AndroidNN-android-32-arm64-v8.2-a.tar.gz
           mkdir -p armnn.module/system/vendor/bin/hw/
