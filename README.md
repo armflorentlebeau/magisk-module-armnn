@@ -14,7 +14,7 @@ In a shell, enter `su` to run as root and CD into the directory where the module
 
 Install the module with:
 ```
-magisk --install-module magisk_module_armnn_23-08.zip
+magisk --install-module magisk_module_armnn_23-11.zip
 ```
 
 ## Enable disable module
@@ -26,5 +26,5 @@ To check the version of ArmNN which is currently installed, run in a root shell:
 ```
 /system/vendor/bin/hw/android.hardware.neuralnetworks@1.3-service-armnn -V
 ArmNN Android NN driver for the Android Neural Networks API.
-ArmNN v33.0.0
+ArmNN v33.1.0
 ```
